@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
   <title> Finexo </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -757,7 +758,7 @@
     <script>
         const carousel = document.querySelector('.event-carousel');
         const cards = document.querySelectorAll('.event-card');
-        const cardWidth = 520; // Card width + right margin
+        const cardWidth = 520; 
         let currentIndex = 0;
 
         function scrollCarousel(direction) {
@@ -769,151 +770,33 @@
             carousel.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
         }
 
-        // Clone the first card and append it to the end for smooth circular effect
         const firstCardClone = cards[0].cloneNode(true);
         carousel.appendChild(firstCardClone);
-
-        // Set initial width to accommodate all cards including the clone
         carousel.style.width = `${cardWidth * (cards.length + 1)}px`;
     </script>
 </body>
 </html>
-
-
-  <!-- end client section -->
-
-
-  <!-- info section -->
-<!-- 
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
+<footer class="custom-footer">
+  <div class="footer-container">
+      <div class="contact-section">
+          <h4 class="footer-heading">Get in touch</h4>
+          <p class="footer-text">
+            <i class="fa-solid fa-envelope"></i> help@solveathon.in
+          </p>
       </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <!-- <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </section>  -->
-  <!-- footer section -->
-  <!-- <div class="container-fluid bg-light pt-3 py-2">
-
-    <div class="footer-gap-center pt-2">
-        <div>
-            <h5 class="mb-3 text-center">Get in touch</h5>
-            <p><i class="fa fa-envelope me-3"></i>help@solveathon.in</p>
-            <p><i class="fa fa-phone-alt me-3"></i>+91 9883359998</p>
-        </div>
-        <hr class="vertical" id="vertical">
-        <div>
-            <h5 class="mb-3 text-center">Overall Co-ordinator</h5>
-            <p><i class="fa fa-envelope me-3"></i>naman@solveathon.in</p>
-            <p><i class="fa fa-phone-alt me-3"></i>+91 9830659998</p>
-        </div>
-
-    </div>
-    <hr>
-
-    <h5 class="mb-4 text-center">© <a target="_blank" href="https://chennai.vit.ac.in/">VIT Chennai</a>, All
-        Right
-        Reserved.</h5>
-
-</div> -->
-
+      <div class="long-separator"></div>
+      <div class="coordinator-section">
+          <h4 class="footer-heading">Overall Co-ordinator</h4>
+          <p class="footer-text">
+            <i class="fa-solid fa-envelope"></i> naman@solveathon.in
+          </p>
+      </div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+      © <a href="#" class="footer-link">VIT Chennai</a>, All Right Reserved.
+  </div>
+</footer>
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
