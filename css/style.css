@@ -673,9 +673,9 @@ a:focus {
 .team_section .team_container .box .social_box a:hover {
   color: #00bbf0;
 }
-
-/*team section end*/
-/* client section start */
+/* 
+team section end
+client section start */
 .client_section .heading_container {
   margin-bottom: 30px;
 }
@@ -703,6 +703,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   width: 100px;
+
   margin-bottom: -50px;
   margin-left: 25px;
   position: relative;
@@ -934,3 +935,60 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
+/* .footer {
+  background-color: #f5faff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact, .coordinator {
+  margin: 0 20px;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #888;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+.separator {
+  border-left: 1px solid #ccc;
+  height: 40px;
+  margin: 0 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-bottom a {
+  color: #00cfff;
+  text-decoration: none;
+} */
