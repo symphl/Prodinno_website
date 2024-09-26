@@ -936,7 +936,7 @@ client section start */
   justify-content: center;
   align-items: center;
 }
- .custom-footer {
+ /* .custom-footer {
   background-color: #f0f7ff;
   padding: 20px;
   text-align: center;
@@ -1003,7 +1003,110 @@ client section start */
   display: flex;
   justify-content:center;
   margin-left: 100px;
+} */
+.custom-footer {
+  background-color: #f0f7ff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* Ensure the sections stack on smaller screens */
+}
+
+.contact-section, .coordinator-section {
+  margin: 0 20px;
+  flex: 1 1 300px; /* Ensure the sections shrink to fit on smaller screens */
+  min-width: 200px; /* Prevents sections from getting too small */
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.footer-text {
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Add gap between icon and text */
+}
+
+.icon {
+  height: 16px;
+  margin-right: 8px;
+}
+
+.long-separator {
+  border-left: 2px solid #666;
+  height: 60px;
+  margin: 0 100px;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #bbb;
+  margin: 20px 0px;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-link {
+  color: #00cfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section, .coordinator-section {
+    margin: 10px 0;
+  }
+
+  .long-separator {
+    display: none; /* Hide the separator on smaller screens */
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
 .logopro{
   width: 100px;
   height: 50px;
